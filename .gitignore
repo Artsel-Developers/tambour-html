@@ -1,0 +1,7 @@
+gulp#Untrack folders
+node_modules/
+.idea/
+.history/
+app/css
+app/*.html
+

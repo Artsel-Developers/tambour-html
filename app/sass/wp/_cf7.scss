@@ -1,0 +1,84 @@
+form {
+	.wpcf7 {
+		// Wrapper field
+		.form-field {
+		}
+
+		// Main wrapper row
+		&-form-control-wrap {
+			display: block;
+			position: relative;
+		}
+
+		// Validate
+		// Class if empty required input, select, textarea...
+		&-not-valid {
+		}
+		// Class for block after form element if empty required
+		&-not-valid-tip {
+			display: block;
+			font-size: 0.8em;
+			padding-top: 0.2em;
+			color: red;
+			text-transform: none;
+		}
+		// Answer after submit After submit button
+		&-response-output {
+		}
+
+		// Elements
+		// Checkbox & Radio
+		&-checkbox {
+			.wpcf7-list-item {
+				label {
+				}
+			}
+		}
+		&-radio {
+			.wpcf7-list-item {
+				label {
+				}
+			}
+		}
+
+		// Number & range
+		&-number {
+		}
+		&-range {
+		}
+
+		// Texts (type: -text, -url, -tel, -email )
+		&-text {
+		}
+		&-textarea {
+		}
+
+		// Select
+		&-select {
+		}
+
+		// File
+		&-file {
+		}
+
+		// Submit & spinner
+		&-submit {
+			&.has-spinner {
+			}
+		}
+		&-spinner {
+		}
+
+		&.invalid {
+		}
+	}
+}
+.screen-reader-response {
+	// Answer after submit Before form
+	p {
+	}
+	ul {
+		li {
+		}
+	}
+}

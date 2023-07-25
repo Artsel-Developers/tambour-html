@@ -1,0 +1,26 @@
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin ltr() {
+	html[dir="ltr"] & {
+		@content;
+	}
+}
+
+@mixin rtl() {
+	html[dir="rtl"] & {
+		@content;
+	}
+}

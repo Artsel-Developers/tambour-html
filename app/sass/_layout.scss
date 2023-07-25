@@ -1,0 +1,57 @@
+.box {
+	max-width: $containerWidth;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -0.8125rem;
+	margin-right: -0.8125rem;
+}
+
+.row [class*='col-'] {
+	padding-left: 0.8125rem;
+	padding-right: 0.8125rem;
+}
+
+.row.no_gutter {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.row.no_gutter [class*='col-'] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.col-6 {
+	width: 50%;
+	@include tablet-sm-768 {
+		width: 100%;
+	}
+}
+
+.col-4 {
+	width: 33.3333333%;
+	@include tablet-md-1024 {
+		width: 50%;
+	}
+	@include tablet-sm-768 {
+		width: 100%;
+	}
+}
+
+.col-3 {
+	width: 25%;
+	@include tablet-md-1024 {
+		width: 33.33333%;
+	}
+	@include tablet-sm-768 {
+		width: 50%;
+	}
+	@include mobile-sm-480 {
+		width: 100%;
+	}
+}

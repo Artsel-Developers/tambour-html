@@ -1,0 +1,25 @@
+@function strip-unit($number) {
+	@if type-of($number) == "number" and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+@function resppx($min, $max, $width, $minwidth: 320) {
+	@return calc(
+		#{strip-unit($min)}px + (#{strip-unit($max)} - #{strip-unit($min)}) *
+			((100vw - #{$minwidth}px) / (#{strip-unit($width)} - #{$minwidth}))
+	);
+}
+
+//convert px to rem
+@function rem($value) {
+	$remValue: ($value / 16) + rem;
+	@return $remValue;
+}
+//convert px to em
+@function em($value, $const) {
+	$emValue: ($value / $const) + em;
+	@return $emValue;
+}
